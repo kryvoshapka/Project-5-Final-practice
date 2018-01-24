@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Final practice</title>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="wrapper-inner">
+            <div class="logo-cube"><span>logo</span></div>
+
+            <nav>
+                <a href="#">этапы работы</a>
+                <a href="#">КАЛЬКУЛЯТОР</a>
+                <a href="#">преимущества</a>
+                <a href="#">ОБРАТНАЯ СВЯЗЬ</a>
+            </nav>
+            <i class="fa fa-bars burger"></i>
+            <div class="phone-block">
+                <div class="phone-number">
+                    <i class="fa fa-phone"></i>
+                    <a href="tel:+71234567890">+7 (123) 456-78-90</a>
+                </div>
+                <button class="order-call">Заказать звонок</button>
+            </div>
+        </div>
+    </header>
+    <div class="banner-top">
+        <div class="wrapper-inner">
+            Современные стандарты, новейшие материалы для<br>ремонта и отделки, энергосберегающие технологии -
+            <h2>все это гарантия успешного арендного бизнеса!</h2>
+            <button class="get-info">Узнать подробнее</button>
+        </div>
+    </div>
+    <div class="banner-middle">
+        <div class="wrapper-inner">
+            <h2>Станьте профессионалом арендного бизнеса<br>За 5 шагов:</h2>
+            <div class="steps">
+                <ul>
+                    <li>Бизнес-план на основе оценки профессионального риэлтора</li>
+                    <li>План-проект реновации с фиксированным бюджетом на работы и материалы</li>
+                    <li>Подбор способа финансирования проекта</li>
+                    <li>Выполнение работ квалифицированными мастерами точно в срок</li>
+                    <li>Гарантированная сдача объекта в аренду и возврат сделанных инвестиций</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="estimate-block">
+        <div class="wrapper-inner">
+            <h2>Экспресс оценка Вашей выгоды</h2>
+            <div class="multiple-radio-block">
+                <div class="radio floors">
+                    <p>Выберите этажность дома</p>
+                    <input id='up-to-5' name="floor" type="radio" value="up-to-5">
+                        <label for="up-to-5">до 5 этажей</label>
+
+                    <input id='9-to-14' name="floor" type="radio" value="9-to-14">
+                        <label for="9-to-14">9-14 этажей</label>
+
+                    <input id='16-and-above' name="floor" type="radio" value="16-and-above">
+                        <label for="16-and-above">16 и более этажей</label>
+                </div>
+
+                <div class="form my-floor">
+                    <p>Выберите свой этаж</p>
+                    <input type="text">
+                </div>
+
+                <div class="form footage">
+                    <p>Введите метраж</p>
+                    <input type="text">
+                </div>
+
+                <div class="radio rooms">
+                    <p>Количество комнат</p>
+                    <input id='quantity-1' name="room" type="radio" value="1">
+                    <label for="quantity-1">1</label>
+
+                    <input id='quantity-2' name="room" type="radio" value="2">
+                    <label for="quantity-2">2</label>
+
+                    <input id='quantity-3' name="room" type="radio" value="3">
+                    <label for="quantity-3">3</label>
+                </div>
+                <div class="radio distance">
+                    <p>Удаленность от метро:</p>
+                    <input id='by-foot' name="distance" type="radio" value="by-foot">
+                    <label for="by-foot">пешком</label>
+
+                    <input id='by-car' name="distance" type="radio" value="by-car">
+                    <label for="by-car">транспортом</label>
+                </div>
+                <div class="radio time">
+                    <input id='time-1' name="time" type="radio" value="up-to-5">
+                    <label for="time-1">до 5 минут</label>
+
+                    <input id='time-2' name="time" type="radio" value="5-to-10">
+                    <label for="time-2">5-10 минут</label>
+
+                    <input id='time-3' name="time" type="radio" value="up-to-10">
+                    <label for="time-3">до 10 минут</label>
+
+                    <input id='time-4' name="time" type="radio" value="10-to-15">
+                    <label for="time-4">10-15 минут</label>
+
+                    <input id='time-5' name="time" type="radio" value="15-and-up">
+                    <label for="time-5">больше 15 минут</label>
+                </div>
+                <div class="radio repair">
+                    <p>Тип ремонта</p>
+                    <input id='amator' name="room" type="radio" value="amator">
+                    <label for="amator">бабушкин</label>
+
+                    <input id='econom' name="room" type="radio" value="econom">
+                    <label for="econom">эконом</label>
+
+                    <input id='premium' name="room" type="radio" value="premium">
+                    <label for="premium">премиум</label>
+                </div>
+                <div class="radio repair-need">
+
+                    <input id='major' name="repair-need" type="radio" value="major">
+                    <label for="major">требует капитальный ремонт</label>
+
+                    <input id='minor' name="repair-need" type="radio" value="minor">
+                    <label for="minor">требует косметический ремонт</label>
+
+                    <input id='no-need' name="repair-need" type="radio" value="no-need">
+                    <label for="no-need">не требует </label>
+                </div>
+
+                <div class="form price">
+                    <p>За сколько сейчас сдается?</p>
+                    <input type="text">
+                </div>
+
+                <div class="form address">
+                    <label>
+                        <input type="email" placeholder="Ваш e-mail">
+                    </label>
+                    <span>или</span>
+                    <label>
+                        <input type="tel" placeholder="Ваш телефон">
+                    </label>
+                </div>
+                <div class="calculate">
+                    <button>Рассчитать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="advantages">
+        <div class="wrapper-inner">
+            <h2>Наши преимущества</h2>
+            <div class="our-advantages">
+                <div class="adv-item">
+                    <div class="item-1"></div>
+                    100% - рабочая бизнес-модель
+                </div>
+                <div class="adv-item">
+                    <div class="item-2"></div>
+                    Окупаемость проекта 11 месяцев
+                </div>
+                <div class="adv-item">
+                    <div class="item-3"></div>
+                    Бесплатные консультации и помощь в пересдаче квартиры в течении года
+                </div>
+                <div class="adv-item">
+                    <div class="item-4"></div>
+                    Дополнительно: уборка, текущий ремонт, правовое и налоговое консультирование
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="income">
+        <div class="wrapper-inner">
+            <h2>Вы получите стабильный и высокий доход</h2>
+            <div class="your-income">
+                <div class="income-item">
+                    <div class="inc-1"></div>
+                    Гарантированная сдача объекта в аренду по договору
+                </div>
+                <div class="income-item">
+                    <div class="inc-2"></div>
+                    Найдем адекватных арендаторов на длительный срок
+                </div>
+                <div class="income-item">
+                    <div class="inc-3"></div>
+                    Вашим арендаторам будет на столько удобно,что им не захочется уезжать
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-form">
+        <div class="wrapper-inner">
+            <h3>Остались вопросы? Мы всегда на связи!</h3>
+            Отправьте заявку и мы свяжемся с Вами в ближайшее время
+            <div class="application-form">
+                <label>
+                    <input type='text' placeholder="Ваше имя">
+                </label>
+
+                <label>
+                    <input type="tel" placeholder="Ваш телефон">
+                </label>
+
+                <label class='message'>
+                    <input type="text" textarea="Сообщение">
+                </label>
+            </div>
+            <div class="send">
+                    <button>Отправить</button>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <div class="wrapper-inner">
+            <div class="social">
+                <a href="#"><i class="fa fa-vk"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-youtube-play"></i></a>
+
+            </div>
+            <div class="copyright">Все права защищены © 2017</div>
+            <div class="phone-block">
+                <div class="phone-number">
+                    <i class="fa fa-phone"></i>
+                    <a href="tel:+71234567890">+7 (123) 456-78-90</a>
+                </div>
+                <button class="order-call">Заказать звонок</button>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="js/jquery-3.1.1-min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
