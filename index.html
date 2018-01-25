@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Final practice</title>
     <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/grow.css"  media="all">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <div class="wrapper">
     <header>
         <div class="wrapper-inner">
-            <div class="logo-cube"><span>logo</span></div>
+            <div class="logo-cube hvr-grow"><p>logo</p></div>
 
             <nav>
-                <a href="#">этапы работы</a>
-                <a href="#">КАЛЬКУЛЯТОР</a>
-                <a href="#">преимущества</a>
-                <a href="#">ОБРАТНАЯ СВЯЗЬ</a>
+                <a href="#stages">этапы работы</a>
+                <a href="#calculator">КАЛЬКУЛЯТОР</a>
+                <a href="#advantages">преимущества</a>
+                <a href="#feedback">ОБРАТНАЯ СВЯЗЬ</a>
             </nav>
             <i class="fa fa-bars burger"></i>
             <div class="phone-block">
@@ -25,7 +26,7 @@
                     <i class="fa fa-phone"></i>
                     <a href="tel:+71234567890">+7 (123) 456-78-90</a>
                 </div>
-                <button class="order-call">Заказать звонок</button>
+                <button class="order-call hvr-grow">Заказать звонок</button>
             </div>
         </div>
     </header>
@@ -33,11 +34,11 @@
         <div class="wrapper-inner">
             Современные стандарты, новейшие материалы для<br>ремонта и отделки, энергосберегающие технологии -
             <h2>все это гарантия успешного арендного бизнеса!</h2>
-            <button class="get-info">Узнать подробнее</button>
+            <button class="get-info hvr-grow">Узнать подробнее</button>
         </div>
     </div>
     <div class="banner-middle">
-        <div class="wrapper-inner">
+        <div id='stages' class="wrapper-inner">
             <h2>Станьте профессионалом арендного бизнеса<br>За 5 шагов:</h2>
             <div class="steps">
                 <ul>
@@ -51,7 +52,7 @@
         </div>
     </div>
     <div class="estimate-block">
-        <div class="wrapper-inner">
+        <div id="calculator" class="wrapper-inner">
             <h2>Экспресс оценка Вашей выгоды</h2>
             <div class="multiple-radio-block">
                 <div class="radio floors">
@@ -148,31 +149,31 @@
                         <input type="tel" placeholder="Ваш телефон">
                     </label>
                 </div>
-                <div class="calculate">
+                <div class="calculate hvr-grow">
                     <button>Рассчитать</button>
                 </div>
             </div>
         </div>
     </div>
     <div class="advantages">
-        <div class="wrapper-inner">
+        <div id="advantages" class="wrapper-inner">
             <h2>Наши преимущества</h2>
             <div class="our-advantages">
                 <div class="adv-item">
                     <div class="item-1"></div>
-                    100% - рабочая бизнес-модель
+                    <p>100% - рабочая бизнес-модель</p>
                 </div>
                 <div class="adv-item">
                     <div class="item-2"></div>
-                    Окупаемость проекта 11 месяцев
+                    <p>Окупаемость проекта 11 месяцев</p>
                 </div>
                 <div class="adv-item">
                     <div class="item-3"></div>
-                    Бесплатные консультации и помощь в пересдаче квартиры в течении года
+                    <p>Бесплатные консультации и помощь в пересдаче квартиры в течении года</p>
                 </div>
                 <div class="adv-item">
                     <div class="item-4"></div>
-                    Дополнительно: уборка, текущий ремонт, правовое и налоговое консультирование
+                    <p>Дополнительно: уборка, текущий ремонт, правовое и налоговое консультирование</p>
                 </div>
             </div>
         </div>
@@ -183,23 +184,23 @@
             <div class="your-income">
                 <div class="income-item">
                     <div class="inc-1"></div>
-                    Гарантированная сдача объекта в аренду по договору
+                    <p>Гарантированная сдача объекта в аренду по договору</p>
                 </div>
                 <div class="income-item">
                     <div class="inc-2"></div>
-                    Найдем адекватных арендаторов на длительный срок
+                    <p>Найдем адекватных арендаторов на длительный срок</p>
                 </div>
                 <div class="income-item">
                     <div class="inc-3"></div>
-                    Вашим арендаторам будет на столько удобно,что им не захочется уезжать
+                    <p>Вашим арендаторам будет на столько удобно,что им не захочется уезжать</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="bottom-form">
-        <div class="wrapper-inner">
+        <div id="feedback" class="wrapper-inner">
             <h3>Остались вопросы? Мы всегда на связи!</h3>
-            Отправьте заявку и мы свяжемся с Вами в ближайшее время
+            <span>Отправьте заявку и мы свяжемся с Вами в ближайшее время</span>
             <div class="application-form">
                 <label>
                     <input type='text' placeholder="Ваше имя">
@@ -209,14 +210,14 @@
                     <input type="tel" placeholder="Ваш телефон">
                 </label>
 
-                <label class='message'>
-                    <input type="text" textarea="Сообщение">
-                </label>
-            </div>
-            <div class="send">
-                    <button>Отправить</button>
-            </div>
+                <form class="message">
+                    <textarea placeholder="Ваше сообщение"></textarea>
+                </form>
 
+                <div class="send hvr-grow">
+                    <button>Отправить</button>
+                </div>
+            </div>
         </div>
     </div>
     <footer>
@@ -234,10 +235,55 @@
                     <i class="fa fa-phone"></i>
                     <a href="tel:+71234567890">+7 (123) 456-78-90</a>
                 </div>
-                <button class="order-call">Заказать звонок</button>
+                <button class="order-call hvr-grow">Заказать звонок</button>
             </div>
         </div>
     </footer>
+
+    <div class="modal">
+
+        <div class="modal-inner">
+            <div class="close-modal"><i class="fa fa-times"></i></div>
+            <h3>Узнать подробнее</h3>
+            <span>Отправьте заявку и мы свяжемся с Вами в ближайшее время</span>
+            <label>
+                <input type='text' placeholder="Ваше имя">
+            </label>
+
+            <label>
+                <input type="tel" placeholder="Ваш телефон">
+            </label>
+
+            <label>
+                <input type="email" placeholder="Ваш email">
+            </label>
+
+            <div class="send hvr-grow">
+                <button>Отправить</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-2">
+
+        <div class="modal-inner">
+            <div class="close-modal"><i class="fa fa-times"></i></div>
+            <h3>Заказать звонок</h3>
+            <span>Отправьте заявку и мы свяжемся с Вами в ближайшее время</span>
+            <label>
+                <input type='text' placeholder="Ваше имя">
+            </label>
+
+            <label>
+                <input type="tel" placeholder="Ваш телефон">
+            </label>
+
+            <div class="send hvr-grow">
+                <button>Отправить</button>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 <script src="js/jquery-3.1.1-min.js"></script>
