@@ -62,7 +62,7 @@ h3 {
 header {
     display: block;
     width: 100%;
-    height: 100px;
+
     background-color: white;
     position: fixed;
     top: 0;
@@ -148,6 +148,7 @@ nav a:hover {
     width: 238px;
     height: 42px;
     background: url("../images/button-header-2.png") no-repeat;
+    background-size: 100% 100%;
     border: transparent;
     color: white;
     font-size: 18px;
@@ -165,11 +166,15 @@ nav a:hover {
 }
 
 @media (max-width: 1190px) {
+    .wrapper {
+        padding-top: 62px;
+    }
+
     header .wrapper-inner {
-        height: 100px;
         position: relative;
         justify-content: flex-end;
         align-items: center;
+        padding: 10px 15px;
     }
 
     header {
@@ -183,12 +188,13 @@ nav a:hover {
     .logo-cube {
         position: absolute;
         left: 0;
-        top: 17px;
+        top: 10px;
+        height: 42px;
     }
 
     nav {
         width: 100%;
-        height: calc(100vh - 100px);
+        height: calc(100vh - 62px);
         position: fixed;
         left: 0;
         bottom: -150%;
@@ -206,6 +212,16 @@ nav a:hover {
         color: #fcb816;
     }
 
+    header .phone-block {
+        width: 170px;
+    }
+
+    header .phone-block button {
+        width: 100%;
+        font-size: 16px;
+        margin-right: 1px;
+    }
+
     .phone-number a {
         color: black;
     }
@@ -218,11 +234,7 @@ nav a:hover {
     }
 }
 
-@media (max-width: 1020px) {
-    header .wrapper-inner {
-        padding: 0 15px;
-    }
-
+@media (max-width: 1010px) {
     .logo-cube {
         left: 15px;
     }
@@ -239,49 +251,43 @@ nav a:hover {
     }
 }
 
-@media (max-width: 768px) {
-    header .banner-top .wrapper-inner {
-        padding: 15px;
-    }
-}
-
 @media (max-width: 500px) {
-    header {
-        height: fit-content;
-    }
-
     header .wrapper-inner {
-        height: fit-content;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        padding: 15px;
+        justify-content: space-between;
     }
 
-    nav {
-        height: calc(100vh - 167px);
-    }
-
-    header .wrapper-inner .logo-cube {
+    .logo-cube {
         display: block;
         position: static;
-        margin: 15px 50px;
     }
 
-   .burger {
-       display: block;
-       padding: 15px 50px;
-       margin-right: 0;
-   }
+    .logo-cube p {
+        font-size: 18px;
+    }
+
+    .burger {
+        margin-right: 0;
+    }
 
     .order-call {
         display: block;
     }
 }
 
-@media (max-width: 379px) {
-    nav {
-        height: calc(100vh - 237px);
+@media (max-width: 450px) {
+    header .phone-block {
+        width: 110px;
+    }
+
+    header .phone-block button {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .logo-cube {
+        width: 100px;
     }
 }
 
@@ -294,7 +300,12 @@ nav a:hover {
     padding: 130px 0;
     display: flex;
     align-items: center;
+}
 
+@media (max-width: 768px) {
+    .banner-top {
+        padding: 70px 0;
+    }
 }
 
 .banner-top:before {
@@ -319,21 +330,27 @@ nav a:hover {
     margin: 0 auto;
 }
 
-@media(max-width: 920px) {
-    .wrapper-inner {
-        padding: 0 15px 15px 15px;
+@media (max-width: 1030px) {
+    .banner-top .wrapper-inner {
+        padding: 0 100px;
     }
 }
 
 @media (max-width: 768px) {
     .banner-top .wrapper-inner {
-        font-size: 30px;
-        padding: 0 20px;
+        padding: 0 30px;
+    }
+
+    .banner-top .wrapper-inner p {
+        font-size: 24px;
+        line-height: 30px;
+        padding: 0 30px;
     }
 
     h2 {
-        font-size: 30px;
-        padding: 0 15px 20px 15px;
+        font-size: 24px;
+        line-height: 30px;
+        padding: 20px;
     }
 
     h2:after {
@@ -343,13 +360,13 @@ nav a:hover {
 
 @media (max-width: 660px) {
     h2 {
-        font-size: 24px;
+        font-size: 20px;
     }
 }
 
 @media(max-width: 490px) {
     .banner-top {
-        padding-bottom: 100px;
+        padding: 20px 0;
     }
 
     h2:after {
@@ -403,7 +420,7 @@ nav a:hover {
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .get-info {
@@ -549,7 +566,7 @@ nav a:hover {
 
 
 @media (max-width: 900px) {
-    .multiple-radio-block, .multiple-radio-block label {
+    .multiple-radio-block label {
         font-size: 14px;
     }
 }
@@ -561,6 +578,12 @@ nav a:hover {
     }
 }
 
+@media (max-width: 478px) {
+    .multiple-radio-block p {
+        font-size: 16px;
+    }
+}
+
 .radio,
 .form {
     display: flex;
@@ -568,13 +591,6 @@ nav a:hover {
     justify-content: space-between;
     padding: 15px 0;
     user-select: none;
-}
-
-@media (max-width: 640px) {
-    .radio, .form {
-        flex-direction: column;
-        padding-top: 0;
-    }
 }
 
 label {
@@ -653,6 +669,12 @@ input[type=radio]:checked + label:before {
     padding-left: 33px;
 }
 
+@media (max-width: 640px) {
+       .time, .repair-need {
+        padding-left: 0;
+    }
+}
+
 .my-floor {
     width: 41%;
 }
@@ -687,6 +709,15 @@ input[type=radio]:checked + label:before {
     border: 2px solid lightgrey;
     border-radius: 3px;
     text-align: center;
+}
+
+@media (max-width: 640px) {
+    .radio, .form {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 10px 0;
+    }
 }
 
 .address {
@@ -873,7 +904,6 @@ input[type=radio]:checked + label:before {
 /*income*/
 
 .income-item {
-    display: flex;
     width: 30%;
 }
 
@@ -925,6 +955,12 @@ input[type=radio]:checked + label:before {
     }
 }
 
+.adv-item .image,
+.income-item .image {
+    display: flex;
+    flex-shrink: 0;
+}
+
 /*bottom-form*/
 
 .bottom-form {
@@ -932,13 +968,25 @@ input[type=radio]:checked + label:before {
     background-size: cover;
 }
 
-.bottom-form .wrapper-inner span {
+.bottom-form .wrapper-inner p {
     font-size: 18px;
     font-weight: bold;
     font-style: italic;
     text-align: center;
     color: white;
     padding-bottom: 20px;
+}
+
+@media (max-width: 770px) {
+    .bottom-form .wrapper-inner {
+        padding: 20px;
+    }
+    .bottom-form .wrapper-inner h3 {
+        font-size: 24px;
+    }
+    .bottom-form .wrapper-inner p {
+        font-size: 14px;
+    }
 }
 
 .application-form {
@@ -1126,14 +1174,15 @@ footer .phone-block a {
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 900px) {
     .modal-inner,
     .modal-2 .modal-inner {
         height: fit-content;
+        padding: 15px;
     }
 }
 
-.fa-times {
+.close-modal {
     position: absolute;
     top: -35px;
     right: -35px;
@@ -1142,21 +1191,37 @@ footer .phone-block a {
     color: orange;
 }
 
-.fa-times:hover {
+.close-modal:hover {
     cursor: pointer;
+}
+
+@media (max-width: 850px) {
+    .close-modal {
+        top: -10px;
+        right: 15px;
+    }
 }
 
 .modal-inner h3 {
     color: black;
 }
 
-.modal-inner span {
+.modal-inner p {
     font-size: 18px;
     font-weight: bold;
     font-style: italic;
     color: orange;
     text-align: center;
     padding-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+    .modal-inner h3 {
+        font-size: 24px;
+    }
+    .modal-inner p {
+        font-size: 14px;
+    }
 }
 
 .modal-inner label:before {
@@ -1206,17 +1271,12 @@ footer .phone-block a {
         width: calc(100% - 70px);
     }
 
-    .fa-times {
-        font-size: 30px;
-    }
-
     .modal-inner input[type=tel],
     .modal-inner input[type=text],
     .modal-inner input[type=email]{
         width: 220px;
     }
 }
-
 
 .modal-inner .send {
     padding-top: 30px;
